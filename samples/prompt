@@ -1,0 +1,100 @@
+#!/usr/bin/php
+<?php
+/**
+ * prompt
+ *
+ * Demo de como obtener datos del usuario por consola
+ *
+ * PHP version 5.3
+ *
+ * Copyright (c) 2013 mostofreddy <mostofreddy@gmail.com>
+ * For the full copyright and license information, please view the LICENSE file that was distributed with this source code.
+ *
+ * @category   Clip/Samples
+ * @package    Clip
+ * @subpackage Clip/Samples
+ * @author     Federico Lozada Mosto <mostofreddy@gmail.com>
+ * @copyright  2013 Federico Lozada Mosto <mostofreddy@gmail.com>
+ * @license    MIT License (http://www.opensource.org/licenses/mit-license.php)
+ * @link       http://www.mostofreddy.com.ar
+ */
+require_once '../src/clip/Clip.php';
+require_once '../src/clip/Opts.php';
+require_once '../src/clip/Writer.php';
+
+/**
+ * Clase Test
+ *
+ * @category  Clip
+ * @package   Clip
+ * @author    Federico Lozada Mosto <mostofreddy@gmail.com>
+ * @copyright 2013 Federico Lozada Mosto <mostofreddy@gmail.com>
+ * @license   MIT License (http://www.opensource.org/licenses/mit-license.php)
+ * @link      http://www.mostofreddy.com.ar
+ */
+class Test extends \clip\Clip
+{
+    /**
+     * Valida los datos de entrada
+     *
+     * @param \clip\Opts $opts objeto \clip\Opts
+     *
+     * @return true|string si no hubo error devuelve true, de lo contrario el mensaje de error
+     */
+    protected function validate(\clip\Opts $opts)
+    {
+        return true;
+    }
+    /**
+     * Imprime la ayuda en pantalla
+     *
+     * @return void
+     */
+    protected function help()
+    {
+        $help = <<<HELP
+Examples
+Usage: ./prompt --version
+Usage: ./prompt --help
+
+--version                      Prints the version and exits.
+--help | -h                    Prints this usage information.
+HELP;
+        $this->writer->write($help, null, null, true)
+            ->nl();
+    }
+    /**
+     * Imprime la version en pantalla
+     *
+     * @return void
+     */
+    protected function version()
+    {
+        $version = <<<VERSION
+prompt 1.0.0 (cli)
+Copyright (c) 2013 Mostofreddy
+VERSION;
+        $this->writer->write($version, null, null, true)
+            ->nl();
+    }
+    /**
+     * run method
+     *
+     * @return void
+     */
+    public function run()
+    {
+        parent::run();
+        $name = $this->writer->prompt("Escribe tu nombre: ");
+        $this->writer->write("Tu nombre es: ".$name)
+            ->nl();
+    }
+}
+
+$opts = new \clip\Opts();
+$opts->read();
+$writer = new \clip\Writer();
+$clip = new Test();
+$clip->opts($opts);
+$clip->writer($writer);
+$clip->run();
