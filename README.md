@@ -14,8 +14,8 @@ Software bajo licencia [MIT](http://opensource.org/licenses/mit-license.php)
 Instalacion
 -----------
 
-    cd DOCUMENT_ROOT
-    git@github.com:mostofreddy/clip.git
+    cd /var/www
+    git clone git@github.com:mostofreddy/clip.git
 
 Ejemplos / Demos
 ----------------

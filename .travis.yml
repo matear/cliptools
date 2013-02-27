@@ -6,6 +6,7 @@ php:
     # using major version aliases
     - 5.3
     - 5.4
+    - 5.5
 
 # install phpcodesniffer
 before_script:
@@ -16,3 +17,4 @@ before_script:
 # run phpunit & phpcodesniffer
 script:
     - phpcs --standard=tests/travisci-phpcs.xml --ignore=samples --extensions=php .
+    - phpunit --configuration tests/phpunit.xml

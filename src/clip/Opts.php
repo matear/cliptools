@@ -100,8 +100,8 @@ final class Opts
         if (is_array($_SERVER['argv'])) {
             return $_SERVER['argv'];
         }
-        if (is_array($GLOBALS['HTTP_SERVER_VARS']['argv'])) {
-            return $GLOBALS['HTTP_SERVER_VARS']['argv'];
+        if (is_array($GLOBALS['argv'])) {
+            return $GLOBALS['argv'];
         }
         throw new \RuntimeException(static::ERR_READ_ARGS);
     }
