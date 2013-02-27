@@ -13,6 +13,6 @@
  */
 $path = realpath(__DIR__."/../");
 
-require_once $path."/src/clip/Opts.php";
-require_once $path."/src/clip/Writer.php";
-require_once $path."/src/clip/Clip.php";
+require_once $path."/src/cliptools/Opts.php";
+require_once $path."/src/cliptools/Writer.php";
+require_once $path."/src/cliptools/Cli.php";

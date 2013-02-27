@@ -1,11 +1,11 @@
-Clip
+Cliptools
 ====
 
-Clip es una libreria para crear aplicaciones para PHP Cli de forma fácil y rápida
+Cliptools es un mini framework que contiene herramientas para facilitar la creacion de aplicaciones PHP para correr por consola
 
 Versión
 -------
-v1.0.0
+v2.0.0
 
 Build Status
 ------------

@@ -1,8 +1,8 @@
 {
-    "name": "clip/clip",
-    "description": "Clip es una libreria para crear aplicaciones para PHP Cli de forma fácil y rápida",
-    "keywords": ["phpcli", "cli", "console"],
-    "homepage": "http://github.com/mostofreddy/clip",
+    "name": "mostofreddy/cliptools",
+    "description": "Cliptools es una libreria para crear aplicaciones para PHP Cli de forma fácil y rápida",
+    "keywords": ["php-cli", "cli", "console"],
+    "homepage": "http://github.com/mostofreddy/cliptools",
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -17,7 +17,7 @@
     },
     "autoload": {
         "psr-0": {
-            "clip": "src/"
+            "cliptools": "src/"
         }
     }
 }

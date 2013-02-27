@@ -10,38 +10,38 @@
  * Copyright (c) 2013 mostofreddy <mostofreddy@gmail.com>
  * For the full copyright and license information, please view the LICENSE file that was distributed with this source code.
  *
- * @category   Clip/Samples
- * @package    Clip
- * @subpackage Clip/Samples
+ * @category   Cliptools/Samples
+ * @package    Cliptools
+ * @subpackage Cliptools/Samples
  * @author     Federico Lozada Mosto <mostofreddy@gmail.com>
  * @copyright  2013 Federico Lozada Mosto <mostofreddy@gmail.com>
  * @license    MIT License (http://www.opensource.org/licenses/mit-license.php)
  * @link       http://www.mostofreddy.com.ar
  */
-require_once '../src/clip/Clip.php';
-require_once '../src/clip/Opts.php';
-require_once '../src/clip/Writer.php';
+require_once '../src/cliptools/Cli.php';
+require_once '../src/cliptools/Opts.php';
+require_once '../src/cliptools/Writer.php';
 
 /**
  * Clase Test
  *
- * @category  Clip
- * @package   Clip
+ * @category  Cliptools
+ * @package   Cliptools
  * @author    Federico Lozada Mosto <mostofreddy@gmail.com>
  * @copyright 2013 Federico Lozada Mosto <mostofreddy@gmail.com>
  * @license   MIT License (http://www.opensource.org/licenses/mit-license.php)
  * @link      http://www.mostofreddy.com.ar
  */
-class Test extends \clip\Clip
+class Test extends \cliptools\Cli
 {
     /**
      * Valida los datos de entrada
      *
-     * @param \clip\Opts $opts objeto \clip\Opts
+     * @param \cliptools\Opts $opts objeto \cliptools\Opts
      *
      * @return true|string si no hubo error devuelve true, de lo contrario el mensaje de error
      */
-    protected function validate(\clip\Opts $opts)
+    protected function validate(\cliptools\Opts $opts)
     {
         return true;
     }
@@ -90,9 +90,9 @@ VERSION;
 }
 
 
-$opts = new \clip\Opts();
+$opts = new \cliptools\Opts();
 $opts->read();
-$writer = new \clip\Writer();
+$writer = new \cliptools\Writer();
 $clip = new Test();
 $clip->opts($opts);
 $clip->writer($writer);

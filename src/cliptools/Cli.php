@@ -7,40 +7,40 @@
  * Copyright (c) 2013 mostofreddy <mostofreddy@gmail.com>
  * For the full copyright and license information, please view the LICENSE file that was distributed with this source code.
  *
- * @category  Clip
- * @package   Clip
+ * @category  Cliptools
+ * @package   Cliptools
  * @author    Federico Lozada Mosto <mostofreddy@gmail.com>
  * @copyright 2013 Federico Lozada Mosto <mostofreddy@gmail.com>
  * @license   MIT License (http://www.opensource.org/licenses/mit-license.php)
  * @link      http://www.mostofreddy.com.ar
  */
-namespace clip;
+namespace cliptools;
 /**
  * Clase base para crear scripts para PHP Cli
  *
  * Define metodos abastractos de ayuda, version y validacion para los scripts.
- * Obtiene todos los parametros enviados al script mediante el objeto \clip\Opts.
+ * Obtiene todos los parametros enviados al script mediante el objeto \cliptools\Opts.
  *
- * @category  Clip
- * @package   Clip
+ * @category  Cliptools
+ * @package   Cliptools
  * @author    Federico Lozada Mosto <mostofreddy@gmail.com>
  * @copyright 2013 Federico Lozada Mosto <mostofreddy@gmail.com>
  * @license   MIT License (http://www.opensource.org/licenses/mit-license.php)
  * @link      http://www.mostofreddy.com.ar
  * @abstract
  */
-abstract class Clip
+abstract class Cli
 {
     const ERR_NOT_CLI = 'El script solo puede ser utilizado desde linea de comando';
     /**
-     * Contiene una instancia de \clip\Opts
+     * Contiene una instancia de \cliptools\Opts
      * Es estatica asi todas las clases hijas de Clip tienen disponibles los parametros enviados en la linea de comando
-     * @var \clip\Opts
+     * @var \cliptools\Opts
      */
     protected $opts = null;
     /**
-     * Contiene una instancia de \clip\Writer
-     * @var \clip\Writer
+     * Contiene una instancia de \cliptools\Writer
+     * @var \cliptools\Writer
      */
     protected $writer = null;
     /**
@@ -70,12 +70,12 @@ abstract class Clip
     /**
      * Recupera y almacena las opciones en viadas en la linea de comando
      *
-     * @param \clip\Opts $opts objeto que procesa los parametros enviados por linea de comando
+     * @param \cliptools\Opts $opts objeto que procesa los parametros enviados por linea de comando
      *
-     * @return \clip\Clip
+     * @return \cliptools\Cli
      * @final
      */
-    final public function opts(\clip\Opts $opts)
+    final public function opts(\cliptools\Opts $opts)
     {
         $this->opts = $opts;
         return $this;
@@ -83,12 +83,12 @@ abstract class Clip
     /**
      * Devuelve un objeto writer
      *
-     * @param \clip\Writer $writer objeto para escribir en consola
+     * @param \cliptools\Writer $writer objeto para escribir en consola
      *
-     * @return \clip\Clip
+     * @return \cliptools\Cli
      * @final
      */
-    final public function writer(\clip\Writer $writer)
+    final public function writer(\cliptools\Writer $writer)
     {
         $this->writer = $writer;
         $this->writer->verbose(in_array('v', $this->opts->short));
@@ -143,11 +143,11 @@ abstract class Clip
     /**
      * Valida los datos de entrada
      *
-     * @param \clip\Opts $opts objeto con los parametros de entrada del script
+     * @param \cliptools\Opts $opts objeto con los parametros de entrada del script
      *
      * @return true|string si no hubo error devuelve true, de lo contrario el mensaje de error
      */
-    abstract protected function validate(\clip\Opts $opts);
+    abstract protected function validate(\cliptools\Opts $opts);
     /**
      * Imprime la ayuda en pantalla
      *

@@ -12,7 +12,7 @@
  * @license    MIT License (http://www.opensource.org/licenses/mit-license.php)
  * @link       http://www.mostofreddy.com.ar
  */
-namespace iwt\tests\cases\action;
+namespace cliptools\tests\cases;
 /**
  * Test unitario para la clase \clip\Opts
  *
@@ -37,7 +37,7 @@ class OptsTest extends \PHPUnit_Framework_TestCase
             "-vgt", "--name=clip", "--read" , "--write=false", "/var/www"
         );
         $_SERVER['argv'] = $expected;
-        $obj = new \clip\Opts();
+        $obj = new \cliptools\Opts();
         $obj->read();
 
         $expected = array(
@@ -59,18 +59,18 @@ class OptsTest extends \PHPUnit_Framework_TestCase
     public function testReadArgsForArgv()
     {
         $method = new \ReflectionMethod(
-            '\clip\Opts', '_readArgs'
+            '\cliptools\Opts', '_readArgs'
         );
         $method->setAccessible(true);
 
         $expected = array(
-            "-vgt", "--name=clip", "/var/www"
+            "-vgt", "--name=cliptools", "/var/www"
         );
         $_SERVER['argv'] = $expected;
 
         $this->assertEquals(
             $expected,
-            $method->invoke(new \clip\Opts())
+            $method->invoke(new \cliptools\Opts())
         );
     }
     /**
@@ -87,7 +87,7 @@ class OptsTest extends \PHPUnit_Framework_TestCase
         }
 
         $method = new \ReflectionMethod(
-            '\clip\Opts', '_readArgs'
+            '\cliptools\Opts', '_readArgs'
         );
         $method->setAccessible(true);
 
@@ -98,7 +98,7 @@ class OptsTest extends \PHPUnit_Framework_TestCase
 
         $this->assertEquals(
             $expected,
-            $method->invoke(new \clip\Opts())
+            $method->invoke(new \cliptools\Opts())
         );
     }
     /**
@@ -114,7 +114,7 @@ class OptsTest extends \PHPUnit_Framework_TestCase
         $GLOBALS['argv'] = null;
 
         $method = new \ReflectionMethod(
-            '\clip\Opts', '_readArgs'
+            '\cliptools\Opts', '_readArgs'
         );
         $method->setAccessible(true);
 
@@ -124,7 +124,7 @@ class OptsTest extends \PHPUnit_Framework_TestCase
 
         $this->assertEquals(
             $expected,
-            $method->invoke(new \clip\Opts())
+            $method->invoke(new \cliptools\Opts())
         );
     }
 }
