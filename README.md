@@ -10,7 +10,7 @@ v2.0.0
 Build Status
 ------------
 
-[![Build Status](https://travis-ci.org/mostofreddy/clip.png?branch=master)](https://travis-ci.org/mostofreddy/clip)
+[![Build Status](https://travis-ci.org/mostofreddy/cliptools.png?branch=master)](https://travis-ci.org/mostofreddy/cliptools)
 
 Licencia
 -------
