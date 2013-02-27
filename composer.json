@@ -1,6 +1,6 @@
 {
     "name": "mostofreddy/cliptools",
-    "description": "Cliptools es una libreria para crear aplicaciones para PHP Cli de forma fácil y rápida",
+    "description": "Cliptools es un mini framework que contiene herramientas para facilitar la creacion de aplicaciones PHP para correr por consola",
     "keywords": ["php-cli", "cli", "console"],
     "homepage": "http://github.com/mostofreddy/cliptools",
     "type": "library",
