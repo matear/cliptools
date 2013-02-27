@@ -5,7 +5,12 @@ Clip es una libreria para crear aplicaciones para PHP Cli de forma fácil y ráp
 
 Versión
 -------
-v0.1.0
+v1.0.0
+
+Build Status
+------------
+
+[![Build Status](https://travis-ci.org/mostofreddy/clip.png?branch=master)](https://travis-ci.org/mostofreddy/clip)
 
 Licencia
 -------
