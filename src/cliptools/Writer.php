@@ -172,13 +172,13 @@ class Writer
         }
         $string = '';
         if ($sForeground!== null && !array_key_exists($sForeground, $this->foregroundColors)) {
-            throw new \InvalidArgumentException('CLI - color inválido: '.$sForeground);
+            throw new \InvalidArgumentException('Invalid color '.$sForeground);
         } elseif ($sForeground !== null) {
             $string = "\033[".$this->foregroundColors[$sForeground]."m";
         }
 
         if ($sBackground !== null && !array_key_exists($sBackground, $this->backgroundColors)) {
-            throw new \InvalidArgumentException('CLI - color de fondo inválido: '.$sBackground);
+            throw new \InvalidArgumentException('Invalid background color: '.$sBackground);
         } elseif ($sBackground !== null) {
             $string .= "\033[".$this->backgroundColors[$sBackground]."m";
         }
