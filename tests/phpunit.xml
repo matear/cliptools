@@ -1,11 +1,12 @@
 <phpunit bootstrap="bootstrap.php" colors="true">
     <testsuites>
-        <testsuite name="clip">
+        <testsuite name="cliptools">
             <file>tests/cases/OptsTest.php</file>
+            <file>tests/cases/WriterTest.php</file>
         </testsuite>
     </testsuites>
     <logging>
         <log type="coverage-text" target="php://stdout" lowUpperBound="50" highLowerBound="80"/>
-        <!--<log type="coverage-html" target="/home/fmosto/www/fede/mostofreddy/clip/tests/coverage" charset="UTF-8" yui="true" highlight="false" lowUpperBound="50" highLowerBound="80"/>-->
+        <log type="coverage-html" target="/home/fmosto/www/fede/mostofreddy/cliptools/tests/coverage" charset="UTF-8" yui="true" highlight="false" lowUpperBound="50" highLowerBound="80"/>
     </logging>
 </phpunit>

@@ -5,7 +5,7 @@
  * PHP version 5.3
  *
  * @category   Tests
- * @package    Clip
+ * @package    Cliptools
  * @subpackage Tests
  * @author     Federico Lozada Mosto <mostofreddy@gmail.com>
  * @copyright  2013 Federico Lozada Mosto <mostofreddy@gmail.com>
@@ -14,10 +14,10 @@
  */
 namespace cliptools\tests\cases;
 /**
- * Test unitario para la clase \clip\Opts
+ * Test unitario para la clase \cliptools\Opts
  *
  * @category   Tests
- * @package    Clip
+ * @package    Cliptools
  * @subpackage Tests
  * @author     Federico Lozada Mosto <mostofreddy@gmail.com>
  * @copyright  2013 Federico Lozada Mosto <mostofreddy@gmail.com>
