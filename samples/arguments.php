@@ -1,9 +1,9 @@
 <?php
 /**
- * Ejemplo de script usando la clase Writer
+ * Ejemplo de script usando la clase Arguments
  *
  * Para probar el ejemplo invocar al script de la siguiente forma
- * php samples/writer.php
+ * php samples/arguments.php -v --param=key --param2 cliptools
  *
  * PHP version 5.3
  *
@@ -20,18 +20,28 @@
 
 require_once "vendor/autoload.php";
 
-$writer = new \cliptools\Writer();
-$read = new \cliptools\Read();
-$read->setWriter($writer);
+$opts = new \cliptools\Arguments();
+$opts->addFlag(
+    array('h', 'help'),
+    array(
+        'description' => 'Imprime la ayuda y sale'
+    )
+);
+$opts->addFlag(
+    array('v'),
+    array(
+        'description' => 'Verbose'
+    )
+);
+$opts->addFlag(
+    array('title'),
+    array(
+        'default' => "cliptools",
+        'description' => 'Titulo'
+    )
+);
 
-$data = $read->prompt("¿Cuanto es 3 * 5? ");
+$opts->proccess();
 
-$writer->write("La data recuperada fue: ".$data)
-    ->nl()
-    ->nl();
-
-$data = $read->yesno("¿3 * 5 es igual a 15?", "n");
-var_dump($data);
-$writer->nl();
-
-$data = $read->options("Elije tu propia aventura", array('Accion', 'Terror'));
+//var_dump($opts->get());
+echo $opts->usage();

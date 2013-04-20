@@ -94,7 +94,7 @@ class Read
      *
      * @return int
      */
-    public function option($label, $options=array(), $error = "Invalid option")
+    public function options($label, $options=array(), $error = "Invalid option")
     {
         $this->writer->write($label)->nl();
         $count = count($options);

@@ -1,9 +1,9 @@
 <?php
 /**
- * Ejemplo de script usando la clase Opts
+ * Ejemplo de script usando la clase Writer
  *
  * Para probar el ejemplo invocar al script de la siguiente forma
- * php samples/opts.php -v --param=key --param2 cliptools
+ * php samples/writer.php
  *
  * PHP version 5.3
  *
@@ -20,18 +20,16 @@
 
 require_once "vendor/autoload.php";
 
-$opts = new \cliptools\Opts();
-$opts->read();
+$writer = new \cliptools\Writer();
 
-echo "short params: ".PHP_EOL;
-echo print_r($opts->short, true);
-
-echo PHP_EOL.PHP_EOL;
-
-echo "long params: ".PHP_EOL;
-echo print_r($opts->long, true);
-
-echo PHP_EOL.PHP_EOL;
-
-echo "input params: ".PHP_EOL;
-echo print_r($opts->input, true);
+$msg = array(
+    "hola",
+    "como",
+    "estas?"
+);
+for ($i = 0; $i < count($msg); $i++) {
+    $writer->write($msg[$i]);
+    sleep(3);
+    $writer->write("\r")->nl();
+    exit;
+}

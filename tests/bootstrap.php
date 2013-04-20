@@ -13,5 +13,5 @@
  */
 $path = realpath(__DIR__."/../");
 
-require_once $path."/src/cliptools/Opts.php";
+require_once $path."/src/cliptools/Arguments.php";
 require_once $path."/src/cliptools/Writer.php";

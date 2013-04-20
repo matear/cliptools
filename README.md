@@ -5,7 +5,7 @@ Cliptools es un mini framework que contiene herramientas para facilitar la creac
 
 Versión
 -------
-v0.3.0
+v0.3.1
 
 Build Status
 ------------
@@ -17,12 +17,9 @@ Features
 
 * Recuperar los valores de entrada de un script por consola (script.php -v --key=value)
 * Escribir mensajes por consola
-* Colorear mensajes por consola
 * Verbose enabled/disabled para controlar la salida de mensajes
 * Silence para no imprimir ningún mensaje
-* Realizar preguntas yes/no y recuperar valor de entrada
-* Realizar preguntas y recuperar valor de entrada
-* Realizar preguntas con opciones, listar las opciones y recuperar seleccion
+* Realizar preguntas, preguntas yes/no y menu de opciones
 
 Licencia
 -------
