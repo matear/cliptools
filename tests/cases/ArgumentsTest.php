@@ -106,7 +106,7 @@ class ArgumentsTest extends \PHPUnit_Framework_TestCase
      */
     public function testUsage()
     {
-        $expected = "Usage:".PHP_EOL;
+        $expected = "Params:".PHP_EOL;
         $expected .= " ".str_pad("v", 20)."verbose".PHP_EOL;
         $expected .= " ".str_pad("title", 20)."title [required]".PHP_EOL;
         $expected .= " ".str_pad("z", 20)." [default: z value]".PHP_EOL;
