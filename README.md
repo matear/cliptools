@@ -5,7 +5,7 @@ Cliptools es un mini framework que contiene herramientas para facilitar la creac
 
 Versión
 -------
-v0.4.0
+v0.5.0
 
 Build Status
 ------------
@@ -21,6 +21,7 @@ Features
 * Silence para no imprimir ningún mensaje
 * Realizar preguntas, preguntas yes/no y menu de opciones
 * Crear barras de progreso al estilo proccess [======>    ] 50%
+* Clase base para crear aplicaciones que corran por shell o cron
 
 Licencia
 -------

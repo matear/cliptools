@@ -110,7 +110,7 @@ class Read
             return ($data-1);
         } else {
             $this->writer->colorize($error, "red")->nl();
-            $this->option($label, $options, $error);
+            $this->options($label, $options, $error);
         }
     }
 }

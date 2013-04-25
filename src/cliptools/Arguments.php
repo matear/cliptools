@@ -68,7 +68,7 @@ class Arguments
      */
     public function usage()
     {
-        $usage = "Usage:".PHP_EOL;
+        $usage = "Params:".PHP_EOL;
         foreach ($this->flags as $flag) {
             $usage .= " ".str_pad(implode(", ", $flag['alias']), 20);
             $usage .= $flag['description'];
