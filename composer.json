@@ -1,5 +1,5 @@
 {
-    "name": "mostofreddy/cliptools",
+    "name": "matear/cliptools",
     "description": "Cliptools es una libreria que permite interactuar y crear aplicaciones PHP para correr en consola",
     "keywords": ["php-cli", "cli", "console", "lib", "cron", "shell"],
     "homepage": "http://github.com/matear/cliptools",
