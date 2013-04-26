@@ -5,7 +5,7 @@ Cliptools es un mini framework que contiene herramientas para facilitar la creac
 
 Versión
 -------
-v0.5.0
+v0.5.1
 
 Build Status
 ------------

@@ -51,7 +51,7 @@ class App extends \cliptools\Cli
      *
      * @return string
      */
-    public function help()
+    protected function help()
     {
         $txt = <<<TXT
 Usage:
@@ -67,7 +67,7 @@ TXT;
      *
      * @return string
      */
-    public function version()
+    protected function version()
     {
         $txt = <<<TXT
 Version: x.y.z

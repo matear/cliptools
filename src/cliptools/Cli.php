@@ -114,7 +114,7 @@ abstract class Cli
      *
      * @return string
      */
-    public function help()
+    protected function help()
     {
         return $this->opts->usage();
     }
@@ -123,7 +123,7 @@ abstract class Cli
      *
      * @return string
      */
-    abstract function version();
+    abstract protected function version();
     /**
      * run method
      *
