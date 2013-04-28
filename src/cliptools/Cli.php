@@ -103,7 +103,7 @@ abstract class Cli
     final protected function callVersion()
     {
         if ($this->opts->get('version')) {
-            $this->writer->write($this->version());
+            $this->writer->write($this->version())->nl();
             exit;
         }
         return $this;
