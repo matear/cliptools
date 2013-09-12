@@ -1,10 +1,11 @@
 {
-    "name": "matear/cliptools",
+    "name": "mostofreddy/cliptools",
     "description": "Cliptools es una libreria que permite interactuar y crear aplicaciones PHP para correr en consola",
     "keywords": ["php-cli", "cli", "console", "lib", "cron", "shell"],
-    "homepage": "http://github.com/matear/cliptools",
+    "homepage": "http://github.com/mostofreddy/cliptools",
     "type": "library",
     "license": "MIT",
+    "version": '0.5.0',
     "authors": [
         {
             "name": "Federico Lozada Mosto",
