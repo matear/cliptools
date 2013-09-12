@@ -1,16 +1,13 @@
 Cliptools
 =========
 
+[![Build Status](https://travis-ci.org/mostofreddy/cliptools.png?branch=master)](https://travis-ci.org/mostofreddy/cliptools)
+
 Cliptools es un mini framework que contiene herramientas para facilitar la creacion de aplicaciones PHP para correr por consola
 
 Versión
 -------
 v0.5.2
-
-Build Status
-------------
-
-[![Build Status](https://travis-ci.org/matear/cliptools.png?branch=master)](https://travis-ci.org/matear/cliptools)(https://travis-ci.org/mostofreddy/cliptools)
 
 Features
 --------
