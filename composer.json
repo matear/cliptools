@@ -5,7 +5,7 @@
     "homepage": "http://github.com/mostofreddy/cliptools",
     "type": "library",
     "license": "MIT",
-    "version": '0.5.0',
+    "version": "0.5.0",
     "authors": [
         {
             "name": "Federico Lozada Mosto",
