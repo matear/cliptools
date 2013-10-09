@@ -2,12 +2,16 @@ Cliptools
 =========
 
 [![Build Status](https://travis-ci.org/mostofreddy/cliptools.png?branch=master)](https://travis-ci.org/mostofreddy/cliptools)
+[![Coverage Status](https://coveralls.io/repos/mostofreddy/cliptools/badge.png)](https://coveralls.io/r/mostofreddy/cliptools)
+[![Latest Stable Version](https://poser.pugx.org/mostofreddy/cliptools/v/stable.png)](https://packagist.org/packages/mostofreddy/cliptools)
+[![Dependency Status](https://www.versioneye.com/user/projects/5254ceaf632bac47e70002de/badge.png)](https://www.versioneye.com/user/projects/5254ceaf632bac47e70002de)
 
-Cliptools es un mini framework que contiene herramientas para facilitar la creacion de aplicaciones PHP para correr por consola
+Conjunto de herramientas para facilitar la creacion de aplicaciones PHP para correr por consola
 
 Versión
 -------
-v0.5.2
+
+__v0.5.3__ stable
 
 Features
 --------
@@ -27,6 +31,10 @@ Software bajo licencia [MIT](http://opensource.org/licenses/mit-license.php)
 Instalación
 -----------
 
+### Requerimientos
+
+- PHP >= 5.3.0
+
 ### github
 
     cd /var/www
@@ -41,7 +49,8 @@ Instalación
 
 Ejemplos / Demos
 ----------------
-En la carpeta [samples](https://github.com/matear/cliptools/tree/master/samples) se pueden encontrar ejemplos de uso
+
+Visite la carpeta de [samples](https://github.com/mostofreddy/cliptools/tree/master/samples)
 
 Tests
 -----

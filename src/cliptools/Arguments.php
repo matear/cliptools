@@ -107,6 +107,20 @@ class Arguments
         return array_key_exists($key, $this->alias)?$this->alias[$key]:null;
     }
     /**
+     * Setea un valor por default
+     *
+     * @param string $key   clave
+     * @param mixed  $value valor
+     *
+     * @return \cliptools\Arguments
+     */
+    public function set($key, $value)
+    {
+        $this->alias[$key] = $value;
+        return $this;
+    }
+
+    /**
      * Parsea los datos
      *
      * @return void

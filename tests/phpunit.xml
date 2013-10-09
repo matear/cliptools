@@ -7,6 +7,6 @@
     </testsuites>
     <logging>
         <log type="coverage-text" target="php://stdout" lowUpperBound="50" highLowerBound="80"/>
-        <!--<log type="coverage-html" target="/home/fmosto/www/fede/mostofreddy/cliptools/tests/coverage" charset="UTF-8" yui="true" highlight="false" lowUpperBound="50" highLowerBound="80"/>-->
+        <!--<log type="coverage-html" target="./coverage" charset="UTF-8" yui="true" highlight="false" lowUpperBound="50" highLowerBound="80"/>-->
     </logging>
 </phpunit>
