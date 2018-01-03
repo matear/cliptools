@@ -1,10 +1,6 @@
-Cliptools
-=========
+**Deprecado**
 
-[![Build Status](https://travis-ci.org/mostofreddy/cliptools.png?branch=master)](https://travis-ci.org/mostofreddy/cliptools)
-[![Coverage Status](https://coveralls.io/repos/mostofreddy/cliptools/badge.png)](https://coveralls.io/r/mostofreddy/cliptools)
-[![Latest Stable Version](https://poser.pugx.org/mostofreddy/cliptools/v/stable.png)](https://packagist.org/packages/mostofreddy/cliptools)
-[![Dependency Status](https://www.versioneye.com/user/projects/5254ceaf632bac47e70002de/badge.png)](https://www.versioneye.com/user/projects/5254ceaf632bac47e70002de)
+-- ---
 
 Conjunto de herramientas para facilitar la creacion de aplicaciones PHP para correr por consola
 
